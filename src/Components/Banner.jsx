@@ -15,13 +15,13 @@ const backgroundStyle = {
   };
 const Banner = () => {
   return (
-    <div className='bg-slate-600' style={backgroundStyle}>
+    <div  data-aos='fade-in' className='bg-slate-600' style={backgroundStyle}>
       <div className='container py-10'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-evenly'>
             <div className='flex items-center justify-center'>
                 <img src={image} className='w-[300px] md:w-[450px] spin mx-auto' alt="" />
             </div>
-            <div className='gird gap-y-10 space-y-8'>
+            <div data-aos-delay="600" data-aos='fade-left' className='gird gap-y-10 space-y-8'>
                 <div className='flex flex-col items-start justify-center gap-5'>
                     <h1 className='text-2xl font-bold md:text-3xl lg:text-4xl font-cursive capitalize'>Premium brand coffee </h1>
                     <p className='text-slate-700'>

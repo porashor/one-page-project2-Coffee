@@ -20,7 +20,7 @@ const Navbar = () => {
         },
     ]
   return (
-    <div className='bg-gradient-to-r relative from-primary to-secondary/90 text-white shadow-sm bg-gray-900'>
+    <div data-aos="fade-in" className='bg-gradient-to-r relative from-primary to-secondary/90 text-white shadow-sm bg-gray-900'>
       <div className='container py-2'>
         <div className='flex items-center justify-between'>
             <a href='home' className='flex items-center gap-3'>

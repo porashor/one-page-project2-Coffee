@@ -36,13 +36,13 @@ const Testimonial = () => {
         slidesToScroll: 1
       };
   return (
-    <div className='container py-10'>
-      <div className='text-3xl lg:text-4xl font-bold text-center py-5  font-cursive'>Testimonial</div>
+    <div data-aos='fade-in' className='container py-10'>
+      <div data-aos-delay="600" data-aos='fade-up' className='text-3xl lg:text-4xl font-bold text-center py-5  font-cursive'>Testimonial</div>
         <div className='py-10'>
             <Slider {...settings} className=''>
                 {
                     TestimonialData.map((item)=>(
-                        <div key={item.id} className=''>
+                        <div data-aos-delay="900" data-aos='zoom-in' key={item.id} className=''>
                             <div className='bg-slate-200 mx-3 py-5 px-4 rounded-md'>
                                 <div className='flex justify-between items-center '>
                                     <img src={item.img} className='rounded-full w-[90px]' alt="" />

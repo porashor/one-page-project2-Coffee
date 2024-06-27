@@ -12,9 +12,9 @@ const backgroundStyle = {
   };
 const Online = () => {
   return (
-    <div className='' style={backgroundStyle}>
+    <div data-aos='fade-in' className='' style={backgroundStyle}>
         <div className='container py-10 mx-10'>
-            <div className='flex flex-col justify-center items-start'>
+            <div data-aos-delay="600" data-aos='fade-left' className='flex flex-col justify-center items-start'>
                 <h1 className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold py-5'>
                     Coffee Cafe is available for 
                     <h1>

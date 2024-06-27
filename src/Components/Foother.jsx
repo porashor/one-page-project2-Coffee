@@ -36,10 +36,11 @@ const Foother = () => {
         },
     ]
   return (
-    <div className='' style={backgroundStyle}>
-      <div className='container pt-20 text-white pb-[200px]'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] items-center justify-between'>
-            <div className='space-y-4'>
+    <div data-aos='fade-in' className='' style={backgroundStyle}>
+     <div className='bg-black/40 min-h-[400px]'>
+     <div className='container py-10 text-white'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] items-center justify-between gap-4'>
+            <div className='space-y-4' data-aos-delay="500" data-aos='zoom-in'>
                 <h1 className='text-3xl font-cursive2 font-bold'>
                     Coffee Cafe
                 </h1>
@@ -48,8 +49,8 @@ const Foother = () => {
                 </p>
                 <button className='bg-secondary py-2 px-4 rounded-full'><a href="#">Visit Our Youtube Chenel</a></button>
             </div>
-            <div>
-                <h1 className='font-bold text-2xl pb-2'>Importent Links</h1>
+            <div data-aos-delay="600" data-aos='zoom-in'>
+                <h1 className='font-bold text-xl pb-2'>Importent Links</h1>
                 <ul className='space-y-3'>
                     {footherLinks.map((item, index)=>(
                         <li key={index} className=''>
@@ -58,8 +59,8 @@ const Foother = () => {
                     ))}
                 </ul>
             </div>
-            <div>
-                <h1 className='font-bold text-2xl pb-2'>Quick Links</h1>
+            <div data-aos-delay="700" data-aos='zoom-in'>
+                <h1 className='font-bold text-xl pb-2'>Quick Links</h1>
                 <ul className='space-y-3'>
                     {footherLinks.map((item, index)=>(
                         <li key={index} className=''>
@@ -68,8 +69,8 @@ const Foother = () => {
                     ))}
                 </ul>
             </div>
-            <div className='space-y-3'>
-                <h1 className='text-3xl font-bold'>Address</h1>
+            <div data-aos-delay="800" data-aos='zoom-in' className='space-y-3'>
+                <h1 className='text-xl font-bold'>Address</h1>
                 <p className='flex gap-2 items-center'><CiLocationArrow1 className='text-2xl'/> Agrabad, Chattogram</p>
                 <p className='flex gap-2 items-center'><BiPhone className='text-2xl'/> 880-01********</p>
                 <div className='flex gap-3 text-3xl'>
@@ -80,6 +81,7 @@ const Foother = () => {
             </div>
         </div>
       </div>
+     </div>
     </div>
   )
 }
