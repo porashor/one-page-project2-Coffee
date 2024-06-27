@@ -7,6 +7,7 @@ import Online from './Components/Online'
 import Testimonial from './Components/Testimonial'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Foother from './Components/Foother'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Banner/>
       <Online/>
       <Testimonial/>
+      <Foother/>
     </div>
   )
 }
